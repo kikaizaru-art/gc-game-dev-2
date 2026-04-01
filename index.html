@@ -1,23 +1,39 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>gc-game-dev-2</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 40px;
-            font-family: 'Segoe UI', sans-serif;
-            background: #1a1a2e;
-            color: #eee;
-            text-align: center;
-        }
-        h1 { color: #e94560; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>マジカル・ハート・レスキュー 〜呪われし学園と乙女の連鎖〜</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>gc-game-dev-2</h1>
-    <p>ゲーム開発中...</p>
+  <div id="game-container">
+    <div id="ui-overlay"></div>
+  </div>
+
+  <!-- Phaser 3 -->
+  <script src="https://cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
+
+  <!-- 定数 -->
+  <script src="js/constants.js"></script>
+
+  <!-- パズルロジック -->
+  <script src="js/puzzle/stone.js"></script>
+  <script src="js/puzzle/board.js"></script>
+  <script src="js/puzzle/pair.js"></script>
+  <script src="js/puzzle/curse-block.js"></script>
+  <script src="js/puzzle/chain.js"></script>
+
+  <!-- ヒロイン -->
+  <script src="js/heroine/heroine-manager.js"></script>
+  <script src="js/heroine/heroine-ui.js"></script>
+
+  <!-- シーン -->
+  <script src="js/scenes/title-scene.js"></script>
+  <script src="js/scenes/puzzle-scene.js"></script>
+  <script src="js/scenes/result-scene.js"></script>
+
+  <!-- エントリーポイント -->
+  <script src="js/main.js"></script>
 </body>
 </html>
