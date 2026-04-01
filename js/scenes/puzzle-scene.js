@@ -64,11 +64,8 @@ class PuzzleScene extends Phaser.Scene {
       heroine: 'luna',
       dropSpeed: DROP_INTERVAL_INITIAL,
       curseBlocks: [
-        { row: 10, col: 2 }, { row: 10, col: 3 },
-        { row: 11, col: 1 }, { row: 11, col: 2 },
-        { row: 11, col: 3 }, { row: 11, col: 4 },
-        { row: 12, col: 1 }, { row: 12, col: 2 },
-        { row: 12, col: 3 }, { row: 12, col: 4 }
+        { row: 12, col: 2 }, { row: 12, col: 3 },
+        { row: 11, col: 2 }, { row: 11, col: 3 }
       ]
     };
   }
